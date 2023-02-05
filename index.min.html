@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>Soạn thời khóa biểu HUST</title>
+<link rel=stylesheet href=style.min.css>
+</head>
+<body>
+<div id=big-wrapper>
+<div class=wrapper>
+<div id=header>
+<div class=navigation>
+<ul class=list-of-options>
+<li class=option-item>Soạn thời khóa biểu HUST</li>
+</ul>
+</div>
+<div class=page-title>
+<h1 class=page-title__content>Vài thứ bên lề</h1>
+<img src alt class=page-title__image>
+</div>
+</div>
+</div>
+</div>
+<div id=big-wrapper2>
+<div class=spacer60></div>
+<div class=wrapper>
+<div id=page-body>
+<div class=subjects-adding>
+<label for=fileUpload class="file-up-load not-uploaded"><span>Chọn file excel thời khóa biểu</span></label>
+<div class=types-of-edu>
+<p>Chọn chương trình đào tạo:</p>
+<div class=type>
+<input type=radio name=typeofedu id=standard checked>
+<label for=standard>CT CHUẨN</label>
+</div>
+<div class=type>
+<input type=radio name=typeofedu id=advanced>
+<label for=advanced>ELITECH</label>
+</div>
+</div>
+<div class=search-subject-options>
+<p>Tìm môn học theo:</p>
+<div class=option-item>
+<input type=radio name=search-subject-by id=search-by-name checked>
+<label for=search-by-name>Mã học phần</label>
+</div>
+<div class=option-item>
+<input type=radio name=search-subject-by id=search-by-id disabled>
+<label for=search-by-id>Tên</label>
+</div>
+</div>
+<div class=search-input>
+<label for=inf-to-search>Nhập môn học (không bắt buộc phải in hoa):</label>
+<input type=text id=inf-to-search>
+<button class=add-subject>Upload thời khóa biểu</button>
+</div>
+<div class=selected-subjects>
+<div class=display-when-no-subject>
+<ntr class=hl style=font-size:45px>Bạn chưa thêm môn học nào cả</ntr>
+</div>
+</div>
+</div>
+<div class=timetable-options>
+<div class=option-type-1>
+<p class=timetable-options__title><ntr class=hl>Tùy chọn loại 1</ntr></p>
+<div class=timetable-options__option>
+<input type=checkbox name id=b2m>
+<label for=b2m>Nghỉ sáng thứ 2</label>
+</div>
+<div class=timetable-options__option>
+<input type=checkbox name id=b2a>
+<label for=b2a>Nghỉ chiều thứ 2</label>
+</div>
+<div class=timetable-options__option>
+<input type=checkbox name id=b3m>
+<label for=b3m>Nghỉ sáng thứ 3</label>
+</div>
+<div class=timetable-options__option>
+<input type=checkbox name id=b3a>
+<label for=b3a>Nghỉ chiều thứ 3</label>
+</div>
+<div class=timetable-options__option>
+<input type=checkbox name id=b4m>
+<label for=b4m>Nghỉ sáng thứ 4</label>
+</div>
+<div class=timetable-options__option>
+<input type=checkbox name id=b4a>
+<label for=b4a>Nghỉ chiều thứ 4</label>
+</div>
+<div class=timetable-options__option>
+<input type=checkbox name id=b5m>
+<label for=b5m>Nghỉ sáng thứ 5</label>
+</div>
+<div class=timetable-options__option>
+<input type=checkbox name id=b5a>
+<label for=b5a>Nghỉ chiều thứ 5</label>
+</div>
+<div class=timetable-options__option>
+<input type=checkbox name id=b6m>
+<label for=b6m>Nghỉ sáng thứ 6</label>
+</div>
+<div class=timetable-options__option>
+<input type=checkbox name id=b6a>
+<label for=b6a>Nghỉ chiều thứ 6</label>
+</div>
+</div>
+<div class=option-type-2>
+<p class=timetable-options__title><ntr class=hl>Tùy chọn loại 2</ntr></p>
+<div class=timetable-options__option>
+<input type=radio name=op2-item id=bn checked>
+<label for=bn>Không có</label>
+</div>
+<div class=timetable-options__option>
+<input type=radio name=op2-item id=bmxm disabled>
+<label for=bmxm>Nghỉ nhiều buổi sáng nhất</label>
+</div>
+<div class=timetable-options__option>
+<input type=radio name=op2-item id=bmxa disabled>
+<label for=bmxa>Nghỉ nhiều buổi chiều nhất</label>
+</div>
+<div class=timetable-options__option>
+<input type=radio name=op2-item id=bmxhd disabled>
+<label for=bmxhd>Nghỉ nhiều buổi nhất</label>
+</div>
+<div class=timetable-options__option>
+<input type=radio name=op2-item id=bmxhd disabled>
+<label for=bmxhd>Nghỉ nhiều ngày nhất</label>
+</div>
+</div>
+<button class=start-processing>Xếp thời khóa biểu</button>
+<div class=author-suggestion>
+<h1>Một vài điều mình muốn gửi gắm</h1>
+<p>- Trang web có thể chọn được cả những lớp học cùng thời gian nhưng tuần xen kẽ nhau.</p>
+<p>- Các môn mà không có lịch học cụ thể như thực tập hoặc đồ án thì mọi người không cho vào nhé, như thế web sẽ không thể chọn lớp được.</p>
+<p>- Các bạn chú ý nếu lựa chọn các lớp đại trà mà có nhiều lớp học như giải tích, các môn chính trị, thể dục và đặc biệt và các môn vật lý thì sẽ dễ khiến web bị sập nhé.</p>
+<p>- Các bạn chỉ nên chọn khoảng 3 đến 4 môn thuộc kiểu như trên nhé. Còn nếu chọn vật lý đại cương thì nên ít hơn nữa. Các bạn thử hình dung môn VLĐC I có tầm 6000 cách chọn, thêm môn VLĐC II 6000 cách chọn nữa là tầm 36 triệu rồi thì web sập là rõ.</p>
+<p>- Các bạn không nên chọn lịch học quá kín nhé, kiểu như học 10 tiếng 1 ngày ở Bách Khoa chẳng hạn. Học vừa nặng, vừa chán dễ khiến bản thân nản lòng lắm đấy.</p>
+<p>- Trang web chỉ mang tính chất tham khảo thôi vì mình cũng không thể nắm bắt được hết các ngoại lệ của các môn học trong trường nên không thể đảm bảo web này sẽ hoàn toàn chính xác.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input type=file id=fileUpload class="none-display"/>
+<script type=text/javascript src=xlsx.full.min.js></script>
+<script type=text/javascript src=jszip.js></script>
+<script type=text/javascript src=main.mini.js></script>
+</body>
+</html>
