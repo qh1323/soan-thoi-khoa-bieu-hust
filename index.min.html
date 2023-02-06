@@ -5,7 +5,7 @@
 <meta http-equiv=X-UA-Compatible content="IE=edge">
 <meta name=viewport content="width=device-width, initial-scale=1.0">
 <title>Soạn thời khóa biểu HUST</title>
-<link rel=stylesheet href=style.min.css>
+<link rel=stylesheet href=style.css>
 </head>
 <body>
 <div id=big-wrapper>
@@ -131,21 +131,224 @@
 </div>
 <button class=start-processing>Xếp thời khóa biểu</button>
 <div class=author-suggestion>
-<h1>Một vài điều mình muốn gửi gắm</h1>
+<h1>Một vài lưu ý</h1>
+<p>- Trang web chỉ mang tính chất tham khảo thôi vì mình cũng không thể nắm bắt được hết các ngoại lệ của các môn học trong trường nên không thể đảm bảo web này sẽ hoàn toàn chính xác. Các bạn cứ check lại cho chắc.</p>
 <p>- Trang web có thể chọn được cả những lớp học cùng thời gian nhưng tuần xen kẽ nhau.</p>
 <p>- Các môn mà không có lịch học cụ thể như thực tập hoặc đồ án thì mọi người không cho vào nhé, như thế web sẽ không thể chọn lớp được.</p>
 <p>- Các bạn chú ý nếu lựa chọn các lớp đại trà mà có nhiều lớp học như giải tích, các môn chính trị, thể dục và đặc biệt và các môn vật lý thì sẽ dễ khiến web bị sập nhé.</p>
 <p>- Các bạn chỉ nên chọn khoảng 3 đến 4 môn thuộc kiểu như trên nhé. Còn nếu chọn vật lý đại cương thì nên ít hơn nữa. Các bạn thử hình dung môn VLĐC I có tầm 6000 cách chọn, thêm môn VLĐC II 6000 cách chọn nữa là tầm 36 triệu rồi thì web sập là rõ.</p>
-<p>- Các bạn không nên chọn lịch học quá kín nhé, kiểu như học 10 tiếng 1 ngày ở Bách Khoa chẳng hạn. Học vừa nặng, vừa chán dễ khiến bản thân nản lòng lắm đấy.</p>
-<p>- Trang web chỉ mang tính chất tham khảo thôi vì mình cũng không thể nắm bắt được hết các ngoại lệ của các môn học trong trường nên không thể đảm bảo web này sẽ hoàn toàn chính xác.</p>
 </div>
 </div>
 </div>
+<div class=display-results style=display:none>
+<div class=control1>
+<button class=exit-results-details>Quay lai</button>
+<div class=overall-information>
+<span class=nRes>Tong so ket qua: <ntr class=hl>123</ntr></span>
+</div>
+<div class=choose-sort-type>
+<label for=sort-type>Chọn cách sắp xếp kết quả:</label>
+<select name=sort-type id=sort-type class=sort-type>
+<option value=n>Mặc định</option>
+<option value=m>Số buổi sáng được nghỉ</option>
+<option value=a>Số buổi chiều được nghỉ</option>
+<option value=h>Số buổi được nghỉ</option>
+<option value=f>Số ngày được nghỉ</option>
+</select>
+<label for=sort-type-order>Theo thứ tự:</label>
+<select name=sort-type-order id=sort-type-order class=sort-type-order>
+<option value=d>Giảm dần</option>
+<option value=i>Tăng dần</option>
+</select>
+<button class=apply>Áp dụng</button>
+</div>
+</div>
+<div class=control2>
+<button class=prev100>100 Ket qua truoc</button>
+<span class=ith-res>Trang 1: Ket qua tu 0 - 100</span>
+<button class=next100>100 Ket qua sau</button>
+<button class=first-page>Quay về trang 1</button>
+</div>
+<div class=results>
+<div class=result-details>
+<div class=id-result> <ntr class=hl style=font-size:40px> Cách 1: </ntr> </div>
+<div class=result-header>
+Mon gi do, mon gi do cac kieu
+</div>
+<div class=vsl-result>
+<div class=day-i>
+<div class=day-details>
+Thứ 2
+</div>
+<div class=day-cles>
+<div class="block-of-day block-of-day-l">
+details
+</div>
+<div class="block-of-day block-of-day-m"><span> Nghỉ trưa </span></div>
+<div class="block-of-day block-of-day-r tn">
+details
+</div>
+</div>
+</div>
+<div class=day-i>
+<div class=day-details>
+Thứ 3
+</div>
+<div class=day-cles>
+</div>
+</div>
+<div class=day-i>
+<div class=day-details>
+Thứ 4
+</div>
+<div class=day-cles>
+</div>
+</div>
+<div class=day-i>
+<div class=day-details>
+Thứ 5
+</div>
+<div class=day-cles>
+</div>
+</div>
+<div class=day-i>
+<div class=day-details>
+Thứ 6
+</div>
+<div class=day-cles>
+</div>
+</div>
+<div class=day-i>
+<div class=day-details>
+Thứ 7
+</div>
+<div class=day-cles>
+</div>
+</div>
+<div class=day-i>
+<div class=day-details>
+Chủ nhật
+</div>
+<div class=day-cles>
+</div>
+</div>
+</div>
+</div>
+<div class=result-details>
+</div>
+</div>
+<div class=control2>
+<button class=prev100>100 Ket qua truoc</button>
+<span class=ith-res>101/2000</span>
+<button class=next100>100 Ket qua sau</button>
+<button class=first-page>Quay về trang 1</button>
+</div>
+</div>
+</div>
+</div>
+<div class="subject-details-block--wrapper none-display">
+<div class=subject-details-block>
+<div class=general-information>
+<p class=subject-name>IT3100 / Lap Trinh Huong Doi Tuong / Object-oriented programing</p>
+<p class=subject-kl>2 tin chi, khong co TN</p>
+</div>
+<div class=classes-of-subject>
+<div class=LT-and-BT-classes>
+<div class=LT-BT>
+<div class=class-type-introduce>
+<p class=title>Loai lop: LT+BT</p>
+<p class=notice>Test notice</p>
+</div>
+<div class=class-details>
+<div class="class-wrapper checkbox-and-text">
+<input type=checkbox name id>
+<p class=class-time>123456</p>
+</div>
+</div>
+</div>
+<div class=BT>
+<div class=class-type-introduce>
+<p class=title>Loai lop: LT, BT</p>
+<p class=notice>Test notice</p>
+</div>
+<div class="LT-of-BT checkbox-and-text" style=width:100%>
+<input type=checkbox name id>
+<p class=class-time>LT: 123456</p>
+<div>
+<div class="class-wrapper checkbox-and-text">
+<input type=checkbox name id>
+<p class=class-time>BT: 123456</p>
+</div>
+<div class="class-wrapper checkbox-and-text">
+<input type=checkbox name id>
+<p class=class-time>BT: 123456</p>
+</div>
+<div class="class-wrapper checkbox-and-text">
+<input type=checkbox name id>
+<p class=class-time>BT: 123456</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=TN-classes>
+<div class=TN>
+<div class=class-type-introduce>
+<p class=title>Loai lop: TN</p>
+<p class=notice>Test notice</p>
+</div>
+<div class=class-details>
+<div class="class-wrapper checkbox-and-text">
+<input type=checkbox name id>
+<p class=class-time>123456</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=suggestion>
+- Bạn có thể ấn vào các lớp học để xem thông tin chi tiết về lớp đó</br>
+- Bạn cũng có thể bỏ chọn các lớp bạn không thích bằng cách nhấn vào ô tùy chọn
+</div>
+<button class=close-sj-information-block>Đóng</button>
+</div>
+</div>
+<div class="class-details-block-wrapper none-display">
+<div class=class-details-block>
+<div class=id-and-type>
+123456 / TN
+</div>
+<div class=class-notice>Ghi chus cua mon</div>
+<div class=sub-classes-wrapper>
+<div class=sub-class>
+Buoi:
+</div>
+</div>
+</div>
+<button class=close-cl-dt-block-btn>Đóng</button>
+</div>
+<div class="classes-of-block-details-wrapper none-display">
+<div class=classes-of-block-details>
+<button>Đóng</button>
+<div class=class-details-wrapper>
+<span>Thong tin gi do</span>
+</div>
+</div>
+</div>
+<div class="message-wrapper none-display">
+<div class=message>
+<div class=message-header>
+<span>Thông báo</span>
+</div>
+<div class=main-message>
+<span>Đây là thông báo</span>
+</div>
+<button class=exit-button>OK</button>
 </div>
 </div>
 <input type=file id=fileUpload class="none-display"/>
 <script type=text/javascript src=xlsx.full.min.js></script>
 <script type=text/javascript src=jszip.js></script>
-<script type=text/javascript src=main.mini.js></script>
+<script type=text/javascript src=main.js></script>
 </body>
 </html>
