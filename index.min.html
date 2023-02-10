@@ -56,6 +56,9 @@
 <input type=text id=inf-to-search>
 <button class=add-subject>Upload thời khóa biểu</button>
 </div>
+<div class="all-ids none-display">
+<span>Copy đoạn văn bản này vào ô tìm kiếm để lựa chọn nhanh các học phần hiện tại vào lần truy cập web tiếp theo: <ntr class=hl style=font-size:20px>123</ntr></span>
+</div>
 <div class=selected-subjects>
 <div class=display-when-no-subject>
 <ntr class=hl style=font-size:45px>Bạn chưa thêm môn học nào cả</ntr>
@@ -64,7 +67,7 @@
 </div>
 <div class=timetable-options>
 <div class=option-type-1>
-<p class=timetable-options__title><ntr class=hl>Tùy chọn loại 1</ntr></p>
+<p class=timetable-options__title><ntr class=hl>Tùy chọn</ntr></p>
 <div class=timetable-options__option>
 <input type=checkbox name id=b2m>
 <label for=b2m>Nghỉ sáng thứ 2</label>
@@ -106,7 +109,7 @@
 <label for=b6a>Nghỉ chiều thứ 6</label>
 </div>
 </div>
-<div class=option-type-2>
+<div class="option-type-2 none-display">
 <p class=timetable-options__title><ntr class=hl>Tùy chọn loại 2</ntr></p>
 <div class=timetable-options__option>
 <input type=radio name=op2-item id=bn checked>
@@ -154,6 +157,8 @@
 <option value=a>Số buổi chiều được nghỉ</option>
 <option value=h>Số buổi được nghỉ</option>
 <option value=f>Số ngày được nghỉ</option>
+<option value=mt>Số giờ học buổi sáng</option>
+<option value=at>Số giờ học buổi chiều</option>
 </select>
 <label for=sort-type-order>Theo thứ tự:</label>
 <select name=sort-type-order id=sort-type-order class=sort-type-order>
@@ -245,7 +250,6 @@ Chủ nhật
 </div>
 </div>
 </div>
-  
 </div>
 <div class="subject-details-block--wrapper none-display">
 <div class=subject-details-block>
